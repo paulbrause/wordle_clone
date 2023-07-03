@@ -4,7 +4,7 @@
 	import Wordle from '../lib/Wordle/Wordle.svelte';
 </script>
 
-<main class="absolute inset-0 flex flex-col p-4 gap-4">
+<main class="absolute inset-0 flex flex-col p-4 gap-8">
 	<Header />
 	<Wordle />
 	<Keyboard />
