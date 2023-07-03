@@ -3,12 +3,14 @@
 	let letterClass;
 
 	$: {
-		if (letter === 'ENTER' || letter === 'DEL') letterClass = 'px-2';
+		if (letter === 'ENTER' || letter === 'DEL') letterClass = 'px-2 sm:px-4';
 		else letterClass = '';
 	}
 </script>
 
-<button class="flex-1 border-2 border-white border-opacity-20 h-12 rounded-md {letterClass}">
+<button
+	class="flex-1 border-2 border-white border-opacity-20 h-12 sm:h-16 sm:text-2xl rounded-md {letterClass}"
+>
 	{#if letter === 'ENTER'}
 		<svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 m-auto" viewBox="0 0 24 24"
 			><path
