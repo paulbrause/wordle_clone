@@ -1,2 +1,11 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+	import Header from '../lib/Header/Header.svelte';
+	import Keyboard from '../lib/Keyboard/Keyboard.svelte';
+	import Wordle from '../lib/Wordle/Wordle.svelte';
+</script>
+
+<main class="absolute inset-0 flex flex-col p-4 gap-4">
+	<Header />
+	<Wordle />
+	<Keyboard />
+</main>
