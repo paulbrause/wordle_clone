@@ -1,15 +1,11 @@
 <script lang="ts">
-	import KeyboardRow from './KeyboardRow.svelte';
+	import CONSTANTS from '$lib/constants';
 
-	const keyboard = [
-		['Q', 'W', 'E', 'R', 'T', 'Z', 'U', 'I', 'O', 'P'],
-		['A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L'],
-		['ENTER', 'Y', 'X', 'C', 'V', 'B', 'N', 'M', 'DEL']
-	];
+	import KeyboardRow from './KeyboardRow.svelte';
 </script>
 
 <section class="flex flex-col gap-3">
-	{#each keyboard as row}
+	{#each CONSTANTS.KEYBOARD_ROWS_ARR as row}
 		<KeyboardRow {row} />
 	{/each}
 </section>
